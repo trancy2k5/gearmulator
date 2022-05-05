@@ -140,7 +140,7 @@
             }
         },
         {
-            "name" : "Presets",
+            "name" : "button_5_presets",
             "button" : {
                 "isToggle" : "1",
                 "radioGroupId" : "42",
@@ -157,7 +157,11 @@
                 "texture" : "presets-push-btn-118x121",
                 "tileSizeX" : "118",
                 "tileSizeY" : "121"
-            }
+            },
+			"bindButtom": {
+				"bindButtonName" : "button_5_presets",
+				"bindComponentName" : "page_5_presets"		
+			}
         },
         {
             "name" : "RomSelector",
@@ -177,7 +181,7 @@
             }
         },
         {
-            "name" : "TabOsc",
+            "name" : "button_1_osc",
             "button" : {
                 "isToggle" : "1",
                 "radioGroupId" : "42",
@@ -194,10 +198,14 @@
                 "texture" : "osc-btn-306x83",
                 "tileSizeX" : "306",
                 "tileSizeY" : "83"
-            }
+            },
+			"bindButtom": {
+				"bindButtonName" : "button_1_osc",
+				"bindComponentName" : "page_1_osc"		
+			}			
         },
         {
-            "name" : "TabLfo",
+            "name" : "button_2_lfo",
             "button" : {
                 "isToggle" : "1",
                 "radioGroupId" : "42",
@@ -214,10 +222,14 @@
                 "texture" : "lfo-btn-306x83",
                 "tileSizeX" : "306",
                 "tileSizeY" : "83"
-            }
+            },
+			"bindButtom": {
+				"bindButtonName" : "button_2_lfo",
+				"bindComponentName" : "page_2_lfo"		
+			}	
         },
         {
-            "name" : "TabEffects",
+            "name" : "button_3_fx",
             "button" : {
                 "isToggle" : "1",
                 "radioGroupId" : "42",
@@ -234,10 +246,14 @@
                 "texture" : "efcts-btn-306x83",
                 "tileSizeX" : "306",
                 "tileSizeY" : "83"
-            }
+            },
+			"bindButtom": {
+				"bindButtonName" : "button_3_fx",
+				"bindComponentName" : "page_3_fx"		
+			}
         },
         {
-            "name" : "TabArp",
+            "name" : "button_4_arp",
             "button" : {
                 "isToggle" : "1",
                 "radioGroupId" : "42",
@@ -254,7 +270,11 @@
                 "texture" : "arp-btn-306x83",
                 "tileSizeX" : "306",
                 "tileSizeY" : "83"
-            }
+            },
+			"bindButtom": {
+				"bindButtonName" : "button_4_arp",
+				"bindComponentName" : "page_4_arp"		
+			}
         },
         {
             "name" : "SelectPart",
@@ -1569,7 +1589,7 @@
             }
         },
         {
-            "name" : "page_osc",
+            "name" : "page_1_osc",
 			"pageSettings": {
 				"pageName" : "page_osc",
 				"pageButton" : "TabOsc"
@@ -2733,7 +2753,7 @@
             ]
         },
         {
-            "name" : "page_lfo",
+            "name" : "page_2_lfo",
 			"pageSettings": {
 				"pageName" : "page_lfo",
 				"pageButton" : "TabLfo"
@@ -3904,7 +3924,7 @@
             ]
         },
         {
-            "name" : "page_fx",
+            "name" : "page_3_fx",
 			"pageSettings": {
 				"pageName" : "page_fx",
 				"pageButton" : "TabEffects"
@@ -4932,7 +4952,7 @@
             ]
         },
         {
-            "name" : "page_arp",
+            "name" : "page_4_arp",
 			"pageSettings": {
 				"pageName" : "page_arp",
 				"pageButton" : "TabArp"
@@ -5642,11 +5662,7 @@
             ]
         },
         {
-            "name" : "page_presets",
-			"pageSettings": {
-				"pageName" : "page_presets",
-				"pageButton" : "Presets"
-			},			
+            "name" : "page_5_presets",		
             "component" : {
                 "x" : "724",
                 "y" : "325",

@@ -126,7 +126,7 @@
             }
         },
         {
-            "name" : "TabOsc",
+            "name" : "button_1_osc",
             "button" : {
                 "isToggle" : "1",
                 "radioGroupId" : "42",
@@ -143,10 +143,14 @@
                 "texture" : "btn_main_1",
                 "tileSizeX" : "268",
                 "tileSizeY" : "53"
-            }
+            },
+			"bindButtom": {
+				"bindButtonName" : "button_1_osc",
+				"bindComponentName" : "page_1_osc"		
+			}
         },
         {
-            "name" : "TabLfo",
+            "name" : "button_2_lfo",
             "button" : {
                 "isToggle" : "1",
                 "radioGroupId" : "42",
@@ -163,10 +167,14 @@
                 "texture" : "btn_main_2",
                 "tileSizeX" : "268",
                 "tileSizeY" : "53"
-            }
+            },
+			"bindButtom": {
+				"bindButtonName" : "button_2_lfo",
+				"bindComponentName" : "page_2_lfo"			
+			}
         },
         {
-            "name" : "TabEffects",
+            "name" : "button_3_fx",
             "button" : {
                 "isToggle" : "1",
                 "radioGroupId" : "42",
@@ -183,10 +191,14 @@
                 "texture" : "btn_main_3",
                 "tileSizeX" : "268",
                 "tileSizeY" : "53"
-            }
+            },
+			"bindButtom": {
+				"bindButtonName" : "button_3_fx",
+				"bindComponentName" : "page_3_fx"		
+			}
         },
         {
-            "name" : "TabArp",
+            "name" : "button_4_arp",
             "button" : {
                 "isToggle" : "1",
                 "radioGroupId" : "42",
@@ -203,10 +215,14 @@
                 "texture" : "btn_main_4",
                 "tileSizeX" : "268",
                 "tileSizeY" : "53"
-            }
+            },
+			"bindButtom": {
+				"bindButtonName" : "button_4_arp",
+				"bindComponentName" : "page_4_arp"			
+			}
         },
         {
-            "name" : "Presets",
+            "name" : "button_5_presets",
             "button" : {
                 "isToggle" : "1",
                 "radioGroupId" : "42",
@@ -223,10 +239,14 @@
                 "texture" : "btn_main_5",
                 "tileSizeX" : "268",
                 "tileSizeY" : "53"
-            }
+            },
+			"bindButtom": {
+				"bindButtonName" : "button_5_presets",
+				"bindComponentName" : "page_5_presets"		
+			}
         },
         {
-            "name" : "page_osc",
+            "name" : "page_1_osc",
             "image" : {
                 "x" : "100",
                 "y" : "122",
@@ -1485,7 +1505,7 @@
             ]
         },
         {
-            "name" : "page_lfo",
+            "name" : "page_2_lfo",
             "image" : {
                 "x" : "100",
                 "y" : "122",
@@ -2644,7 +2664,7 @@
             ]
         },
         {
-            "name" : "page_fx",
+            "name" : "page_3_fx",
             "image" : {
                 "x" : "100",
                 "y" : "122",
@@ -3689,7 +3709,7 @@
             ]
         },
         {
-            "name" : "page_arp",
+            "name" : "page_4_arp",
             "image" : {
                 "x" : "100",
                 "y" : "122",
@@ -5366,7 +5386,7 @@
             ]
         },
         {
-            "name" : "page_presets",
+            "name" : "page_5_presets",
             "image" : {
                 "x" : "100",
                 "y" : "122",
