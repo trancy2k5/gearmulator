@@ -1,22 +1,25 @@
 #include "Tabs.h"
-
+#include "../juceUiLib/uiObject.h"
 #include "VirusEditor.h"
 
 namespace genericVirusUI
 {
 	Tabs::Tabs(VirusEditor& _editor): m_editor(_editor)
 	{
-		m_tabs.push_back(m_editor.findComponent("page_osc"));
-		m_tabs.push_back(m_editor.findComponent("page_lfo"));
-		m_tabs.push_back(m_editor.findComponent("page_fx"));
-		m_tabs.push_back(m_editor.findComponent("page_arp"));
-		m_tabs.push_back(m_editor.findComponent("page_presets"));
+		std::set<std::string> array;
+		m_editor.findBindingComponent(array, "bindComponentName", false);
+		for(const auto& pages : array)
+		{
+			m_tabs.push_back(m_editor.findComponent(pages));
+		}
 
-		m_tabButtons.push_back(m_editor.findComponentT<juce::Button>("TabOsc"));
-		m_tabButtons.push_back(m_editor.findComponentT<juce::Button>("TabLfo"));
-		m_tabButtons.push_back(m_editor.findComponentT<juce::Button>("TabEffects"));
-		m_tabButtons.push_back(m_editor.findComponentT<juce::Button>("TabArp"));
-		m_tabButtons.push_back(m_editor.findComponentT<juce::Button>("Presets"));
+		array.clear();
+		m_editor.findBindingComponent(array, "bindButtonName", false);
+
+		for(const auto& pages : array)
+		{
+			m_tabButtons.push_back(m_editor.findComponentT<juce::Button>(pages));
+		}
 
 		if(m_tabs.size() != m_tabButtons.size())
 			throw std::runtime_error("Number of tabs does not match number of tab buttons, not all requested objects have been found");

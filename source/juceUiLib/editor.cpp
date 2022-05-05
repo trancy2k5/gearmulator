@@ -190,4 +190,9 @@ namespace genericUI
 			throw std::runtime_error("Failed to find component named " + _name);
 		return comps.empty() ? nullptr : comps.front();
 	}
+
+	void Editor::findBindingComponent(std::set<std::string>& _dst, const std::string& _name, bool _mustExist/* = true*/) const
+	{
+		m_rootObject->collectVariants(_dst, _name);
+	}
 }

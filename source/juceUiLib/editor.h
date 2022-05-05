@@ -44,6 +44,7 @@ namespace genericUI
 		}
 
 		juce::Component* findComponent(const std::string& _name, bool _mustExist = true) const;
+		void findBindingComponent(std::set<std::string>& _dst, const std::string& _name, bool _mustExist/* = true*/) const;
 
 		template<typename T>
 		T* findComponentT(const std::string& _name, bool _mustExist = true) const

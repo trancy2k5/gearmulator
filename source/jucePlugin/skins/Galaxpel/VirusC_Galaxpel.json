@@ -1570,6 +1570,10 @@
         },
         {
             "name" : "page_osc",
+			"pageSettings": {
+				"pageName" : "page_osc",
+				"pageButton" : "TabOsc"
+			},				
             "image" : {
                 "x" : "724",
                 "y" : "325",
@@ -2730,6 +2734,10 @@
         },
         {
             "name" : "page_lfo",
+			"pageSettings": {
+				"pageName" : "page_lfo",
+				"pageButton" : "TabLfo"
+			},				
             "image" : {
                 "x" : "724",
                 "y" : "325",
@@ -3897,6 +3905,10 @@
         },
         {
             "name" : "page_fx",
+			"pageSettings": {
+				"pageName" : "page_fx",
+				"pageButton" : "TabEffects"
+			},				
             "image" : {
                 "x" : "724",
                 "y" : "325",
@@ -4921,6 +4933,10 @@
         },
         {
             "name" : "page_arp",
+			"pageSettings": {
+				"pageName" : "page_arp",
+				"pageButton" : "TabArp"
+			},			
             "image" : {
                 "x" : "724",
                 "y" : "325",
@@ -5627,6 +5643,10 @@
         },
         {
             "name" : "page_presets",
+			"pageSettings": {
+				"pageName" : "page_presets",
+				"pageButton" : "Presets"
+			},			
             "component" : {
                 "x" : "724",
                 "y" : "325",
